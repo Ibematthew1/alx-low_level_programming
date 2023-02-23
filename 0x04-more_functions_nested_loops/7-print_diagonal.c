@@ -1,21 +1,30 @@
 #include "main.h"
 
 /**
- * print_diagonal - print a straight line using putchar of n size
- * @n: size of line
+ * print_diagonal - check for a digit
+ * @n : number of \\ to be printed
+ * Return:void
  */
 
 void print_diagonal(int n)
 {
-	int x;
-	int y;
 
-	if (n <= 0)
-		_putchar('\n');
-	for (y = 0; y < n; y++)
+	int i = 0, ii;
+
+	while (i < n && n > 0)
 	{
-		for (x = y; x > 0; x--)
+		ii = 0;
+		while (ii < i)
+		{
 			_putchar(' ');
+			ii++;
+		}
+
 		_putchar('\\');
 		_putchar('\n');
+		i++;
 	}
+	if (i == 0)
+		_putchar('\n');
+
+}
