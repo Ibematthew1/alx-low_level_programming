@@ -5,7 +5,7 @@
 
 /**
  * main - check the code
- * 
+ *Code by Ibe matthew 
  * Return: Always 0.
  */
 int main(void)
